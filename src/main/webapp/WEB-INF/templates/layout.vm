@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Spring & Velocity</title>
+
+        <link rel="stylesheet" type="text/css" href="/static/css/spectre.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/spectre-exp.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/spectre-icons.css">
+    </head>
+    <body>
+        <div>
+            #parse("/WEB-INF/templates/fragments/header.vm")
+        </div>
+        <div>
+            $!screen_content
+        </div>
+        <div>
+            #parse("/WEB-INF/templates/fragments/footer.vm")
+        </div>
+    </body>
+</html>
